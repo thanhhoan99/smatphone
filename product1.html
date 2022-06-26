@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sản phẩm</title>
+<script src="js/jquery-3.3.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/dathang.js"></script>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/product.css">
+<link rel="stylesheet" href="css/product1.css">
+</head>
+
+<body>
+
+<!-- <div class="giohang">
+
+<a  onclick="showcart()">
+    <div class="header__cart-icon-wrap"><span id="countsp">0</span>
+        <i class="fas fa-shopping-cart header__nav-cart-icon"></i>
+    </div>
+</a>
+</div> -->
+<div class="giohang">
+    <a onclick="showcart()"><img src="images2/cart.png"><span id="countsp">0</span></a>
+</div>
+
+
+<div id="showcart">
+<table>
+    <tr>
+        <tr>
+            <th>STT</th>
+        <th>Images</th>
+        <th>Name product</th>
+        <th> Unit price</th>
+        <th>Amount</th>
+        <th>Into money ($)</th>
+        </tr>
+    </tr>
+    <!-- <tr>
+        <td>1</td>
+        <td><img src="images/iphone/iphone-12-pro-xam.jpg" alt=""></td>
+        <td>Điện thoại</td>
+        <td>10</td>
+        <td>1</td>
+        <td>
+            <div>10</div>
+        </td>
+    </tr>
+    <tr>
+        <th colspan="5">Tổng đơn hàng</th>
+        <th>
+            <div>10</div>
+        </th>
+
+    </tr> -->
+    <tbody id="mycart">
+    </tbody>
+</table>
+<a href="cart.html">Thanh Toán &rArr;</a>
+</div>
+<!-- header -->
+<header id="header">
+<!-- header top -->
+<div class="header__top">
+    <div class="container">
+        <section class="row flex">
+            <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
+                <span>Mobile selling Website</span>
+            </div>
+
+
+        </section>
+    </div>
+</div>
+<!--end header top -->
+
+<!-- header bottom -->
+<div class="header__bottom">
+    <div class="container">
+        <section class="row">
+            <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+                <h1 class="header__heading">
+                    <a href="#" class="header__logo-link">
+                        <img src="images2/logo-mona-.png" alt="Logo" class="header__logo-img">
+                    </a>
+                </h1>
+            </div>
+
+
+            <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+                <select name="" id="" class="header__search-select">
+
+                    <option value="0">All</option>
+                    <option value="1">Iphone</option>
+                    <option value="2">SamSum</option>
+                    <option value="3">Oppo</option> -->
+                    <option value="4">Vivo</option>
+                    <option value="5">Xiaomi</option>
+                    <option value="6">Nokia</option>
+                    <option value="7">Realmi</option>
+                    <option value="8">Itel</option>
+
+                </select>
+                <input type="text" class="header__search-input" placeholder="Search...">
+                <button class="header__search-btn">
+                    <div class="header__search-icon-wrap">
+                        <i class="fas fa-search header__search-icon"></i>
+                    </div>
+                </button>
+            </div>
+
+
+
+
+
+        </section>
+    </div>
+</div>
+<!--end header bottom -->
+
+<!-- header nav -->
+<div class="header__nav">
+    <div class="container">
+        <section class="row">
+
+
+            <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="index.html" class="header__nav-link">Home page</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="category.html" class="header__nav-link"> Product Type</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="cart.html" class="header__nav-link">Billing Information</a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="contact.html" class="header__nav-link">Contact </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="sanpham/dangnhap.html" class="header__nav-link">Login</a>
+                    </li>
+
+
+                </ul>
+            </div>
+            <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+                <i class="fas fa-bars header__nav-menu-icon"></i>
+                <div class="header__nav-menu-title">Product portfolio</div>
+            </div>
+        </section>
+    </div>
+</div>
+</header>
+
+<!--end header nav -->
+<!-- score-top-->
+
+<button onclick="topFunction()" id="myBtn-scroll" title="Go to top"><i class="fas fa-chevron-up"></i></button>
+<!-- product -->
+<section class="product">
+<div class="container">
+    <div class="row bg-white pt-4 pb-4 border-bt pc">
+        <nav class="menu__nav col-lg-3 col-md-12 col-sm-0">
+            <ul class="menu__list">
+                <li class="menu__item menu__item--active">
+                    <a href="#" class="menu__link">
+                    <img src="images1/item/baby-boy.png" alt=""  class="menu__item-icon" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
+                    Iphone 13 PROMAX</a>
+                </li>
+                <!-- <li class="menu__item">
+                    <a href="#" class="menu__link">
+                    <img src="images1/item/translation.png" alt="" class="menu__item-icon" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512">
+                    a</a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <img src="images1/item/1380754_batman_comic_hero_superhero_icon.png" alt="" class="menu__item-icon"  viewBox="0 0 512 512" width="1012" height="512">
+
+                    b</a>
+                </li> -->
+
+            </ul>
+        </nav>
+
+        <article class="product__main col-lg-9 col-md-12 col-sm-12">
+            <div class="row">
+                <div class="product__main-img col-lg-4 col-md-4 col-sm-12">
+
+
+                    <div class="product__panel-img-wrap">
+                        <img src="images2/iphone/iphone-13-pro-max.jpg" alt="" class="product__panel-img">
+                    </div>
+                    <div class="product__panel-price">
+
+                        <span class="product__panel-price-current">
+                            14.700.000đ
+                        </span>
+                    </div>
+
+
+                    <h3 class="product__panel-heading">
+                        <a href="#"  class="product__panel-link">Iphone 13 PROMAX</a>
+                    </h3>
+
+
+
+                    <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                    <button class=" btndathang" onclick="themvaogiohang(this)"> Add to cart</button>
+
+                    <div class="product__panel-rate-wrap">
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                        <i class="fas fa-star product__panel-rate"></i>
+                    </div>
+
+                </div>
+
+
+                <div class="product__main-info col-lg-8 col-md-8 col-sm-12">
+                    <div class="product__main-info-breadcrumb">
+
+Home / Products
+                    </div>
+
+                    <div class="product__main-img-list">
+                        <img src="images2/iphone-12-pro-max-512gb-note-2.jpg">
+
+
+                    </div>
+
+                    <div class="product__main-info-description">
+                        iPhone 13 Pro Max 256 GB - a super product with the leading Apple
+                            A15 Bionic processor, Super Retina XDR 120 Hz screen, extremely large
+                            f/1.5 aperture camera cluster, all of which will bring you immersive
+                            experiences unprecedented great.
+                    </div>
+
+                    <div class="product__main-info-cart">
+                        <!--<div class="product__main-info-cart-quantity">
+                            <input type="button" value="-"  class="product__main-info-cart-quantity-minus">
+                            <input type="number" step="1" min="1" max="999" value="1" class="product__main-info-cart-quantity-total">
+                            <input type="button" value="+" class="product__main-info-cart-quantity-plus">
+                        </div>-->
+
+                        <div class="product__main-info-cart-btn-wrap">
+
+
+                        </div>
+                    </div>
+
+                    <div class="product__main-info-contact">
+                        <a href="#" class="product__main-info-contact-fb">
+                            <i class="fab fa-facebook-f"></i>
+                            Chat Facebook
+                        </a>
+                        <div class="product__main-info-contact-phone-wrap">
+                            <div class="product__main-info-contact-phone-icon">
+                                <i class="fas fa-phone-alt "></i>
+                            </div>
+
+                            <div class="product__main-info-contact-phone">
+                                <div class="product__main-info-contact-phone-title">
+                                    Call for advice
+                                </div>
+                                <div class="product__main-info-contact-phone-number">
+                                    ( 0352.860.701)
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row bg-white">
+                <div class="col-12 product__main-tab">
+                    <a href="#" class="product__main-tab-link product__main-tab-link--active">
+                        Describe
+                    </a>
+                    <a href="#" class="product__main-tab-link">
+                        Evaluate
+                    </a>
+                </div>
+
+                <div class="col-12 product__main-content-wrap">
+
+                    <h2 class="thongtin">  <span>Details</span>
+                        </h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered">
+                                <tbody>
+                                    <tr>
+                                        <th> Screen:</th>
+                                        <td>OLED6.7"Super Retina XDR</td>
+                                    </tr>
+                                    <tr><th>Rear camera:</th><td>3 12 MP cameras</td></tr>
+                                    <tr><th>Chip:</th><td>19 x 27 cm</td></tr>
+                                    <tr><th>RAM:</th><td>Apple A15 Bionicp</td></tr>
+                                    <tr><th>Internal Storage:/th><td>6 GB</td></tr>
+                                    <tr><th>Battery, Charger:</th><td>1 Nano SIM & 1 eSIM 5G Support</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                </div>
+
+            </div>
+        </article>
+
+        <aside class="product__aside col-lg-3 col-md-0 col-sm-0">
+            <div class="product__aside-top">
+                <div class="product__aside-top-item">
+                    <img src="images/shipper.png">
+                    <div class="product__aside-top-item-text">
+                        <p>
+                            Fast shipping
+                        </p>
+                        <span>
+                            In just 24 hours
+                        </span>
+                    </div>
+                </div>
+                <div class="product__aside-top-item">
+                    <img src="images/brand.png">
+                    <div class="product__aside-top-item-text">
+                        <p>
+                            Genuine product
+                        </p>
+                        <span>
+                            100% imported products
+                        </span>
+                    </div>
+                </div>
+                <div class="product__aside-top-item">
+                    <img src="images/less.png">
+                    <div class="product__aside-top-item-text">
+                        <p>
+                            Buy savings
+                        </p>
+                        <span>
+                            10% to 30% cheaper
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+
+    <div class="customer-reviews row pb-4 pb-4 py-4 pb-4 py-4 py-4">
+    <div class="col-lg-12 col-md-12 col-sm-12">
+        <h3 >Product comments</h3>
+        <form id ="formgroupcomment" method="post">
+            <div class="form-group">
+                <label>Tên:</label>
+                <input name="comm_name" required="" type="text" id ='form-name' class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Email:</label>
+                <input name="comm_mail" required="" type="email" class="form-control" id="pwd">
+            </div>
+            <div class="form-group">
+                <label>Content:</label>
+                <textarea name="comm_details" required="" rows="8" id ='formcontent' class="form-control"></textarea>
+            </div>
+            <button type="submit" name="sbm" id= "submitcomment" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    </div>
+
+
+
+
+
+</div>
+</section>
+<!--product -->
+
+<!-- footer -->
+<footer>
+<section class="footer__top">
+    <div class="container">
+        <div class="row">
+            <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+                <h4 class="footer__top-intro-heading">
+                    About us
+                </h4>
+                <div class="footer__top-intro-content">
+                    . We will constantly update
+                    Update the best, newest, best quality <br> <br>
+                    Phone: 0352 860 701 <br>
+                    Email: teamed2@gmail.com <br>
+                    Zalo: 039,882.3232 <br>
+                </div>
+            </article>
+
+            <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+                <h4 class="footer__top-policy-heading">
+                    Purchase Policy
+                </h4>
+
+                <ul class="footer__top-policy-list">
+                    <li class="footer__top-policy-item"><a href="#" class="footer__top-policy-link">Order form</a>
+                    </li>
+                    <li class="footer__top-policy-item">
+                        <a href="#" class="footer__top-policy-link">Payment method</a>
+                    </li>
+                    <li class="footer__top-policy-item">
+                        <a href="#" class="footer__top-policy-link">Shipping method</a>
+                    </li>
+                    <li class="footer__top-policy-item">
+                        <a href="#" class="footer__top-policy-link">Return Policy</a>
+                    </li>
+                    <li class="footer__top-policy-item">
+                        <a href="#" class="footer__top-policy-link">User Manual</a>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
+                <h4 class="footer__top-contact-heading">
+                    Hotline contact
+                </h4>
+
+                <div class="footer__top-contact">
+                    <div class="footer__top-contact-icon">
+                        <img src="images/phone_top.png" class="footer__top-contact-img">
+                    </div>
+
+                    <div class="footer__top-contact-phone-wrap">
+                        <div class="footer__top-contact-phone">
+                            039.882.3232
+                        </div>
+                        <div class="footer__top-contact-des">
+                            (Answer questions 24/7)
+                        </div>
+                    </div>
+                </div>
+
+                <h4 class="footer__top-contact-heading">
+                    Connect with us
+                </h4>
+
+                <div class="footer__top-contact-social">
+                    <a href="#" class="footer__top-contact-social-link">
+                        <img src="images/facebook.png">
+                    </a>
+                    <a href="#" class="footer__top-contact-social-link">
+                        <img src="images/youtube.png">
+                    </a>
+                    <a href="#" class="footer__top-contact-social-link">
+                        <img src="images/tiktok.png">
+                    </a>
+                    <a href="#" class="footer__top-contact-social-link">
+                        <img src="images/zalo.png">
+                    </a>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+<section class="footer__bottom">
+    <div class="container">
+        <div class="row">
+            <span class="footer__bottom-content">@Copyright belongs to edubook | Designed by ED2 team </span>
+        </div>
+    </div>
+</section>
+</footer>
+<!-- end footer -->
+
+<script src="js/jq.js"></script>
+<script src="js/product.js"></script>
+<script >
+
+
+    showgiohang_thanhtoan();
+
+    </script>
+
+</body>
+</html>

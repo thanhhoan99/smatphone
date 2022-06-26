@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục sản phẩm - EduBook</title>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dathang.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/sanpham.css">
+ <link rel="stylesheet" href="css/category.css">
+ <link rel="stylesheet" href="fonts/fontawesome/css/all.min.css">
+</head>
+<body>
+
+    <div class="giohang">
+        <a onclick="showcart()"><img src="images2/cart.png"><span id="countsp">0</span></a>
+    </div>
+
+    <div id="showcart">
+        <table>
+            <tr>
+                <tr>
+                    <th>STT</th>
+                <th>Images</th>
+                <th>Name product</th>
+                <th> Unit price</th>
+                <th>Amount</th>
+                <th>Into money ($)</th>
+                </tr>
+            </tr>
+         <!-- <tr>
+                <td>1</td>
+                <td><img src="images/iphone/iphone-12-pro-xam.jpg" alt=""></td>
+                <td>Điện thoại</td>
+                <td>10</td>
+                <td>1</td>
+                <td>
+                    <div>10</div>
+                </td>
+            </tr>
+            <tr>
+                <th colspan="5">Tổng đơn hàng</th>
+                <th>
+                    <div>10</div>
+                </th>
+
+            </tr> -->
+            <tbody id="mycart">
+            </tbody>
+        </table>
+        <a href="cart.html">Thanh Toán &rArr;</a>
+    </div>
+    <!-- header -->
+    <header id="header">
+        <!-- header top -->
+        <div class="header__top">
+            <div class="container">
+                <section class="row flex">
+                    <div class="col-lg-5 col-md-0 col-sm-0 heade__top-left">
+                        <span>Mobile selling Website</span>
+                    </div>
+
+
+                </section>
+            </div>
+        </div>
+        <!--end header top -->
+
+        <!-- header bottom -->
+        <div class="header__bottom">
+            <div class="container">
+                <section class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-12 header__logo">
+                        <h1 class="header__heading">
+                            <a href="#" class="header__logo-link">
+                                <img src="images2/logo-mona-.png" alt="Logo" class="header__logo-img">
+                            </a>
+                        </h1>
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-7 col-sm-0 header__search">
+                        <select name="" id="" class="header__search-select">
+
+                            <option value="0">All</option>
+                            <option value="1">Iphone</option>
+                            <option value="2">SamSum</option>
+                            <option value="3">Oppo</option> -->
+                            <option value="4">Vivo</option>
+                            <option value="5">Xiaomi</option>
+                            <option value="6">Nokia</option>
+                            <option value="7">Realmi</option>
+                            <option value="8">Itel</option>
+
+                        </select>
+                        <input type="text" class="header__search-input" placeholder="Search...">
+                        <button class="header__search-btn">
+                            <div class="header__search-icon-wrap">
+                                <i class="fas fa-search header__search-icon"></i>
+                            </div>
+                        </button>
+                    </div>
+
+
+
+
+
+                </section>
+            </div>
+        </div>
+        <!--end header bottom -->
+
+        <!-- header nav -->
+        <div class="header__nav">
+            <div class="container">
+                <section class="row">
+
+
+                    <div class="header__nav col-lg-9 col-md-0 col-sm-0">
+                        <ul class="header__nav-list">
+                            <li class="header__nav-item">
+                                <a href="index.html" class="header__nav-link">Home page</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="category.html" class="header__nav-link"> Product Type</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="cart.html" class="header__nav-link">Billing Information</a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="contact.html" class="header__nav-link">Contact </a>
+                            </li>
+                            <li class="header__nav-item">
+                                <a href="sanpham/dangnhap.html" class="header__nav-link">Login</a>
+                            </li>
+
+
+                        </ul>
+                    </div>
+                    <div class="header__nav-menu-wrap col-lg-3 col-md-0 col-sm-0">
+                        <i class="fas fa-bars header__nav-menu-icon"></i>
+                        <div class="header__nav-menu-title">Product portfolio</div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </header>
+
+
+
+ -->
+ <section id ='category1' class="product__love">
+    <div class="container">
+        <div class="row bg-white">
+            <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                <h2 class="product__love-heading upper">
+                   Iphone
+                </h2>
+            </div>
+        </div>
+        <div class="row bg-white">
+            <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/iphone/iphone-12-pro-max-.jpg" alt="" class="product__panel-img">
+                </div>
+              <div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                        16.900.000đ
+                    </span>
+                </div>
+
+
+                <h3 class="product__panel-heading">
+                    <a href="#"  class="product__panel-link">Iphone 12 PROMAX</a>
+                </h3>
+
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+
+            <div class=" col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/iphone/iphone-13-red-.jpg" alt="" class="product__panel-img">
+                </div>
+<div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                        13.400.300đ
+                    </span>
+                </div>
+
+
+                <h3 class="product__panel-heading">
+                    <a href="#" class="p-name product__panel-link">Iphone 13</a>
+                </h3>
+
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+
+            <div class=" col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/iphone/iphone-13-pro-max.jpg" alt="" class="product__panel-img">
+                </div>
+<div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                        17.000.000đ
+                    </span>
+
+                </div>
+
+                <h3 class="product__panel-heading">
+                    <a href="#" class="product__panel-link">  Iphone 13 PROMAX</a>
+                </h3>
+
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+            <div class=" col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/iphone/iphone-se-2020-.jpg" alt="" class="product__panel-img">
+                </div>
+<div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                        11.112.500đ
+                    </span>
+
+                </div>
+
+                <h3 class="product__panel-heading">
+                    <a href="#" class=" product__panel-link">Iphone SE</a>
+                </h3>
+
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</section>
+
+<!-- category 2: Sách nước ngoài-->
+<section  id ='category2' class="product__love">
+    <div class="container">
+        <div class="row bg-white">
+            <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                <h2 class="product__love-heading upper">
+                   SamSung
+                </h2>
+            </div>
+        </div>
+        <div class="row bg-white">
+            <div class="col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/samsum/Galaxy-S22-Black-.jpg" alt="" class="product__panel-img">
+                </div>
+<div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                        16.900.000đ
+                    </span>
+                </div>
+
+
+                <h3 class="product__panel-heading">
+                    <a href="#"  class="product__panel-link">Samsung Galaxy-S22</a>
+
+                </h3>
+
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+
+            <div class=" col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/samsum/Galaxy-S22-Plus-.jpg" class="product__panel-img">
+                </div>
+<div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                        13.400.300đ
+                    </span>
+                </div>
+
+
+                <h3 class="product__panel-heading">
+                    <a href="#" class="p-name product__panel-link">Samsung Galaxy-S22 Plus</a>
+                </h3>
+
+
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+
+            <div class=" col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/samsum/Galaxy-S22-Ultra-Burgundy.jpg" class="product__panel-img">
+                </div>
+<div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                        17.000.000đ
+                    </span>
+
+                </div>
+
+                <h3 class="product__panel-heading">
+                    <a href="#" class="product__panel-link">  Samsung Galaxy-S22 UL</a>
+                </h3>
+
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+
+
+
+            <div class=" col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/samsum/samsung-galaxy-note-20-.jpg"  alt="" class="product__panel-img" >
+                </div>
+<div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                       11.063.960đ
+                    </span>
+
+                </div>
+
+                <h3 class="product__panel-heading">
+                    <a href="#" class="product__panel-link">SamSung NOTE 20
+                    </a>
+                </h3>
+
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- category 3: Manga - Comics-->
+<section  id ='category3'class="product__love">
+    <div class="container">
+        <div class="row bg-white">
+            <div class="col-lg-12 col-md-12 col-sm-12 product__love-title">
+                <h2 class="product__love-heading upper">
+                    Oppo
+                </h2>
+            </div>
+        </div>
+        <div class="row bg-white">
+
+
+
+            <div class=" col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/iphone/iphone-13-pro-max.jpg" alt="" class="product__panel-img">
+                </div>
+<div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                        17.000.000đ
+                    </span>
+
+                </div>
+
+                <h3 class="product__panel-heading">
+                    <a href="#" class="product__panel-link">  Iphone 13 PROMAX</a>
+                </h3>
+
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+            <div class=" col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/iphone/iphone-se-2020-.jpg" alt="" class="product__panel-img">
+                </div>
+<div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                        11.112.500đ
+                    </span>
+
+                </div>
+
+                <h3 class="product__panel-heading">
+                    <a href="#" class=" product__panel-link">Iphone SE</a>
+                </h3>
+
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+
+            <div class=" col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/iphone/iphone-xr-128gb.jpg" alt="" class="product__panel-img" >
+                </div>
+<div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                        13.009.500đ
+                    </span>
+
+                </div>
+
+                <h3 class="product__panel-heading">
+                    <a href="#" class="product__panel-link">Iphone XR</a>
+                </h3>
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+
+            <div class=" col-lg-2 col-md-3 col-sm-6">
+                <div class="product__panel-img-wrap">
+                    <img src="images2/iphone/iphone11.jpg"  alt="" class="product__panel-img" >
+                </div>
+<div class="product__panel-price">
+
+                    <span class="product__panel-price-current">
+                       11.063.960đ
+                    </span>
+
+                </div>
+
+                <h3 class="product__panel-heading">
+                    <a href="#" class="product__panel-link">Iphone 11
+                    </a>
+                </h3>
+
+
+
+                <input class="input1" type="number" name="soluong" min="1" max="10" value="1">
+                <button class="btndathang" onclick="themvaogiohang(this)">Buy</button>
+
+                <div class="product__panel-rate-wrap">
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                    <i class="fas fa-star product__panel-rate"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- footer -->
+>
+
+    <!-- category 3: Manga - Comics-->
+
+    <!-- footer -->
+  <!-- footer -->
+  <footer>
+    <section class="footer__top">
+        <div class="container">
+            <div class="row">
+                <article class="footer__top-intro col-lg-5 col-md-4 col-sm-6">
+                    <h4 class="footer__top-intro-heading">
+
+About us
+                    </h4>
+                    <div class="footer__top-intro-content">
+                        We will continue to update
+                        Japan, newest, best quality
+                         <br> <br>
+                        Phone: 0344577234 <br>
+                        Email: teamed2@gmail.com <br>
+                        Zalo: 0344577234 <br>
+                    </div>
+                </article>
+
+                <article class="footer__top-policy col-lg-3 col-md-4 col-sm-6">
+                    <h4 class="footer__top-policy-heading">
+
+Purchase Policy
+                    </h4>
+
+                    <ul class="footer__top-policy-list">
+                        <li class="footer__top-policy-item">
+                            <a href="#" class="footer__top-policy-link">Order form</a>
+                        </li>
+                        <li class="footer__top-policy-item">
+                            <a href="#" class="footer__top-policy-link">Payment method</a>
+                        </li>
+                        <li class="footer__top-policy-item">
+                            <a href="#" class="footer__top-policy-link">Shipping method</a>
+                        </li>
+                        <li class="footer__top-policy-item">
+                            <a href="#" class="footer__top-policy-link">Return Policy</a>
+                        </li>
+                        <li class="footer__top-policy-item">
+                            <a href="#" class="footer__top-policy-link">User Manual</a>
+                        </li>
+                    </ul>
+                </article>
+
+                <article class="footer__top-contact-wrap col-lg-4 col-md-4 col-sm-6">
+                    <h4 class="footer__top-contact-heading">
+
+Hotline contact
+                    </h4>
+
+                    <div class="footer__top-contact">
+                        <div class="footer__top-contact-icon">
+                            <img src="images/phone_top.png" class="footer__top-contact-img">
+                        </div>
+
+                        <div class="footer__top-contact-phone-wrap">
+                            <div class="footer__top-contact-phone">
+                                0344577234
+                            </div>
+                            <div class="footer__top-contact-des">
+                                (Answer questions 24/7)
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="footer__top-contact-heading">
+
+Connect with us
+                    </h4>
+
+                    <div class="footer__top-contact-social">
+                        <a href="#" class="footer__top-contact-social-link">
+                            <img src="images/facebook.png">
+                        </a>
+                        <a href="#" class="footer__top-contact-social-link">
+                            <img src="images/youtube.png">
+                        </a>
+                        <a href="#" class="footer__top-contact-social-link">
+                            <img src="images/tiktok.png">
+                        </a>
+                        <a href="#" class="footer__top-contact-social-link">
+                            <img src="images/zalo.png">
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+    <section class="footer__bottom">
+        <div class="container">
+            <div class="row">
+                <span class="footer__bottom-content">@Copyright belongs to me | Designed by team TH </span>
+            </div>
+        </div>
+    </section>
+</footer>
+
+    <!-- end footer -->
+    <!-- scroll to top -->
+  <!-- score-top-->
+
+    <!--  -->
+    <script >
+
+
+        showgiohang_thanhtoan();
+
+        </script>
+
+
+</body>
+</html>

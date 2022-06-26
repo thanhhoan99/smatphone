@@ -1,0 +1,244 @@
+
+
+
+.row1 {
+    float: left;
+
+
+    margin-top: 2px;
+
+}
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+.giohang {
+    position: absolute;
+    border-radius: 10px;
+    right: 30px;
+    top: 32px;
+    height: 60px;
+
+    padding: 10px;
+}
+#countsp{
+    position: absolute;
+    right: -15px;
+}
+
+.giohang img {
+    width: 40px;
+    float: left;
+    margin-right: 5px;
+}
+
+.giohang span {
+    font-weight: bold;
+    font-size: 2vw;
+    color: rgb(255, 255, 255);
+    height: 40px;
+    line-height: 40px;
+}
+#showcart{
+    position: fixed;
+    border-radius: 10px;
+    right: 60px;
+    top: 235px;
+    left: 850px;
+
+
+    padding: 10px;
+
+    display: none;
+
+
+}
+    #mycart{
+        text-align: center;
+        margin-right: 60px;
+
+
+    }
+    .ttgh12{
+        margin-left: 10px;
+ width: 920px;
+
+    }
+
+    .textdonhang{
+       margin-left: 90px;
+    }
+
+.boxtrai {
+  float: left;
+  position: absolute;
+  left: 100px;
+
+}
+
+.texttk{
+    font-size: 20px;
+    position: absolute;
+    top: 235px;
+    right: 90px;
+}
+.ttkh6{
+   width: 920px;
+}
+
+
+/* giỏ hàng */
+
+table {
+    width: 100%;
+    background-color: rgba(247, 245, 245, 0.918);
+    border: rgb(61, 61, 61) 1px solid;
+
+
+
+}
+
+th {
+    background-color: rgb(196, 194, 194);
+    padding: 10px;
+    border: rgb(39, 39, 39) 1px solid;
+    font-size: 12px;
+}
+
+th,
+td {
+    border: 1px rgb(159, 154, 154) solid;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+td div {
+    width: calc(100% - 20px);
+    padding: 0px 10px;
+    text-align: center;
+   font-size: 15px;
+}
+
+th div {
+    width: calc(100% - 10px);
+    padding: 0px 5px;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+
+td img {
+    width: 100px;
+}
+
+.btndathang{
+    margin: 10px;
+    width: 60px;
+    height: 25px;
+    font-size: 11px;
+  color: #FFF;
+    background-image: linear-gradient(rgb(228, 58, 58), #f17070);
+}
+.product__panel-heading :hover{
+    background-color: aliceblue;
+}
+
+
+
+.thongtinnhanhang12{
+    margin: 30px;
+}
+
+.thongtinnhanhang1{
+    margin: 16px;
+}
+/* thong tin nhận hàng */
+.thongtinnhanhang{
+    margin-left: 10px;
+    margin-top: 40px;
+}
+
+.thongtinnhanhang tr td {
+    text-align: center;
+    padding: 10px;
+    font-size: 15px;
+    width: 300px;
+
+}
+.thongtinnhanhang tr  {
+    text-align: left;
+    padding: 10px;
+    font-size: 15px;
+    width: 100%;
+
+
+}
+
+.thongtinnhanhang input {
+    width: 600px;
+    border: 1px #CCC solid;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+
+.dongy {
+    width: 150px;
+    border: 1px #F90 solid;
+    background-image: linear-gradient(rgb(215, 72, 72), rgb(235, 83, 83));
+    padding: 10px;
+    border-radius: 5px;
+    color: #FFF;
+    font-weight: bold;
+   position: absolute;
+   top: 90px;
+   left: 960px;
+}
+
+.btndathang:hover {
+    background-image: linear-gradient(rgb(25, 205, 25), #000);
+}
+.boxsp button:hover{
+
+    background-image: linear-gradient(rgb(25, 205, 25), #000);
+}
+.product__panel-img{
+    width: 200px;
+}
+.product__main-img {
+    padding: 40px;
+    margin-top: 40px;
+}
+.product__panel-price-current  {
+    padding-top: 15px;
+}
+
+.input1{
+    height: 20px;
+    font-size: 10px;
+}
+.product__main-info-cart-btn{
+    margin-top: 20px;
+}
+.product__panel-price-current{
+    margin-top: 10px;
+}
+.product__main-img-list img{
+    width: 400px;
+   text-align: center;
+   padding: 20px;
+   padding-left: 20px;
+   margin-left: 50px;
+
+
+}
+.product__main-info-description{
+   text-align: justify;
+}
+
